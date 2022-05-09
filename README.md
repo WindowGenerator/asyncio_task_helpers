@@ -7,7 +7,7 @@ A small package with useful helpers for asyncio. These tools can help you with a
 - [x] Write tests
 - [x] Write linters and formaters
 - [x] Write code
-- [ ] Add CI/CD
+- [x] Add CI/CD
 
 ## Development:
 - Install dependencies:
