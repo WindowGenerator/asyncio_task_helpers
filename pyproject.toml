@@ -1,0 +1,60 @@
+[tool.poetry]
+name = "asyncio_task_helpers"
+version = "0.0.2"
+description = "A small package with useful helpers for asyncio"
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/WindowGenerator/asyncio_task_helpers"
+repository = "https://github.com/WindowGenerator/asyncio_task_helpers"
+documentation = "https://github.com/WindowGenerator/asyncio_task_helpers"
+
+keywords = [
+    "Poetry",
+    "Virtual Environments",
+    "Tutorial",
+    "Packages",
+    "Pip"
+]
+
+authors = ["WindowGenerator <chudov42@gmail.com>"]
+
+packages = [
+    {include = "asyncio_task_helpers"},
+    {include = "tests", format = "sdist"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.2"
+pytest-asyncio = "^0.18.3"
+tox = "^3.25.0"
+pre-commit = "^2.19.0"
+
+[tool.isort]
+line_length = 88
+atomic = true
+include_trailing_comma = true
+lines_after_imports = 2
+lines_between_types = 1
+multi_line_output = 3
+use_parentheses = true
+not_skip = "__init__.py"
+filter_files = true
+
+known_first_party = "asyncio_task_helpers"
+known_third_party = [
+    "pytest",
+]
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests"
+]
+asyncio_mode="auto"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
