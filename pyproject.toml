@@ -9,11 +9,12 @@ repository = "https://github.com/WindowGenerator/asyncio_task_helpers"
 documentation = "https://github.com/WindowGenerator/asyncio_task_helpers"
 
 keywords = [
-    "Poetry",
-    "Virtual Environments",
-    "Tutorial",
-    "Packages",
-    "Pip"
+    "asyncio",
+    "python37",
+    "python38",
+    "python39",
+    "python310",
+    "python-3"
 ]
 
 authors = ["WindowGenerator <chudov42@gmail.com>"]
