@@ -10,6 +10,14 @@ A small package with useful helpers for asyncio. These tools can help you with a
 - [x] Write code
 - [x] Add CI/CD
 
+## Installation:
+
+- Install from source:
+```bash
+poetry build
+```
+After that, u can use package builded in dist
+
 ## Development:
 
 - Install dependencies:
